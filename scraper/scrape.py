@@ -28,6 +28,9 @@ START_URLS = [
     "https://www.gamnon.net/AG-NewHerbal/Panorama/_Panorama-Index.htm",
     "https://www.gamnon.net/AG-NewHerbal/GAmnon.html",
     "https://www.gamnon.net/AG-NewHerbal/Menu.html",
+    # Discovered in pass 1:
+    "https://www.gamnon.net/AG-NewHerbal/AA/Alanine.htm",   # Amino Acids section
+    "https://www.gamnon.net/AA/Arginine.htm",                # Alt path AA
 ]
 DELAY_SEC = 0.3          # polite delay between requests
 TIMEOUT_SEC = 15

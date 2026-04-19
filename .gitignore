@@ -1,0 +1,25 @@
+# Environment
+.env.local
+.env
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+web/.next/
+web/out/
+dist/
+
+# Scraped raw data (large, regeneratable)
+scraper/raw/
+image-pipeline/raw/
+image-pipeline/enhanced/
+
+# Translation cache (large, regeneratable — keep schemas not outputs)
+translator/cache/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -26,7 +26,7 @@ export default async function LetterPage({ params }: { params: Promise<{ letter:
       <nav className="text-sm mb-6 text-right" style={{ color: "var(--color-muted)" }}>
         <Link href="/herbs" style={{ color: "var(--color-herb)" }}>צמחי מרפא</Link>
         {" ← "}
-        <span>{heLetter}</span>
+        <span>{bucket.label}</span>
       </nav>
 
       <h1 className="text-3xl font-bold mb-1 text-right" style={{ color: "var(--color-herb)" }}>

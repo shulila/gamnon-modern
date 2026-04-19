@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --color-herb: #3a6b35;
+  --color-herb-light: #e8f5e3;
+  --color-cream: #f9f5ef;
+  --color-bark: #8b6914;
+  --color-text: #2c2416;
+  --color-muted: #6b5d4f;
+  --color-border: #d4c9b8;
+}
+
+html {
+  font-family: "Heebo", "David CLM", "Arial Hebrew", Arial, sans-serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-text);
+}
+
+/* Visual-Hebrew body text: stored in visual (LTR) order, read R→L naturally */
+.body-visual-he {
+  direction: ltr;
+  text-align: right;
+  unicode-bidi: plaintext;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  font-size: 1rem;
+}

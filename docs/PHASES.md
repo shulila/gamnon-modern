@@ -6,9 +6,9 @@
 | 0.5 | Pre-flight discovery | ✅ Done | 2026-04 |
 | 1 | Full scrape — 1,294 pages, Python scraper | ✅ Done | 2026-04 |
 | 2 | Image pipeline — 487 images, metadata index | ✅ Done (see note) | 2026-04-19 |
-| 3 | Content structure & taxonomy | — | |
+| 3 | Content structure & taxonomy | ✅ Done | 2026-04-19 |
 | 4 | Translation pipeline | ⏭ Deferred | |
-| 5 | Next.js 15 site | — | |
+| 5 | Next.js 15 site — 1,294 pages, RTL, search | ✅ Done | 2026-04-20 |
 | 6 | Design quality pass | — | |
 | 7 | Validation | — | |
 | 8 | Deploy | — | |

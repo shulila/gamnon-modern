@@ -3,11 +3,11 @@ import { readFileSync } from "fs";
 import path from "path";
 export * from "./constants";
 
-// process.cwd() = gamnon-modern/web/ during build; go up one level to repo root
-const REPO = path.join(process.cwd(), "..");
+// Data files live in web/data/ — colocated for Vercel deployment
+const DATA = path.join(process.cwd(), "data");
 
-function load<T>(relPath: string): T {
-  return JSON.parse(readFileSync(path.join(REPO, relPath), "utf-8")) as T;
+function load<T>(filename: string): T {
+  return JSON.parse(readFileSync(path.join(DATA, filename), "utf-8")) as T;
 }
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -61,22 +61,22 @@ let _search: SearchEntry[] | null = null;
 let _xrefs: Record<string, string[]> | null = null;
 
 export function getPages(): Page[] {
-  if (!_pages) _pages = load<Page[]>("scraper/clean/pages.json");
+  if (!_pages) _pages = load<Page[]>("pages.json");
   return _pages;
 }
 
 export function getTaxonomy(): Taxonomy {
-  if (!_taxonomy) _taxonomy = load<Taxonomy>("content/taxonomy.json");
+  if (!_taxonomy) _taxonomy = load<Taxonomy>("taxonomy.json");
   return _taxonomy;
 }
 
 export function getSearchIndex(): SearchEntry[] {
-  if (!_search) _search = load<SearchEntry[]>("content/search-index.json");
+  if (!_search) _search = load<SearchEntry[]>("search-index.json");
   return _search;
 }
 
 export function getCrossRefs(): Record<string, string[]> {
-  if (!_xrefs) _xrefs = load<Record<string, string[]>>("content/crossrefs.json");
+  if (!_xrefs) _xrefs = load<Record<string, string[]>>("crossrefs.json");
   return _xrefs;
 }
 

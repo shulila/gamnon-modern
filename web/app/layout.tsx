@@ -14,8 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="he" dir="rtl" className={heebo.variable}>
       <body className="min-h-screen flex flex-col antialiased" style={{ fontFamily: "var(--font-heebo), Arial Hebrew, Arial, sans-serif" }}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:right-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded" style={{ background: "var(--color-herb)", color: "#fff" }}>
+          דלג לתוכן הראשי
+        </a>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <footer className="py-6 text-center text-sm" style={{ color: "var(--color-muted)", borderTop: "1px solid var(--color-border)" }}>
           <p>גאמנון מודרני — מבוסס על תוכן מקורי של גאמנון.נט</p>
         </footer>

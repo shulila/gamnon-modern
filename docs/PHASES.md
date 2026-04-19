@@ -10,8 +10,8 @@
 | 4 | Translation pipeline | ⏭ Deferred | |
 | 5 | Next.js 15 site — 1,294 pages, RTL, search | ✅ Done | 2026-04-20 |
 | 6 | Design quality pass | — | |
-| 7 | Validation | — | |
-| 8 | Deploy | — | |
+| 7 | Validation — lang/dir, landmarks, H1s, alts, skip link | ✅ Done | 2026-04-20 |
+| 8 | Deploy — vercel.json + HANDOFF.md | ✅ Done | 2026-04-20 |
 
 ## Phase 2 — Image Pipeline Notes
 
